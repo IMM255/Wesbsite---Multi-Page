@@ -1,8 +1,8 @@
 import {Container, Row, Col} from 'react-bootstrap'
 import HeroImage from '../assets/img/hero.png'
 import { kelasTerbaru, dataSwiper } from '../data/index'
-import { useNavigate } from 'react-router-dom'
-
+import { useNavigate } from 'react-router-dom';
+import  FaqComponent  from '../components/FaqComponent';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -120,6 +120,9 @@ const HomePage = () => {
           </Row>
         </Container>
       </div>
+
+      <FaqComponent />
+
     </div>
 
   )
