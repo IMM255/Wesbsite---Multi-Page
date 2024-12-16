@@ -1,10 +1,10 @@
-import FaqComponent from "../components/FaqComponent"
+import FaqComponent from "../components/FaqComponent";
 
 const FaqPage = () => {
   return (
-    <div>
-        <FaqComponent/>
+    <div className="pt5">
+      <FaqComponent />
     </div>
-  )
-}
-export default FaqPage
+  );
+};
+export default FaqPage;
