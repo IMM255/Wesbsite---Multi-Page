@@ -8,6 +8,11 @@ import "./dist/css/main.css";
 
 import "animate.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
 import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(

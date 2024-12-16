@@ -60,7 +60,13 @@ const HomePage = () => {
           <Row>
             {kelasTerbaru.map((kelas) => {
               return (
-                <Col key={kelas.id} className="shadow rounded">
+                <Col
+                  key={kelas.id}
+                  className="shadow rounded"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay={kelas.delay}
+                >
                   <img src={kelas.image} alt="kelas-img" />
                   <div className="star mb-2 px-3">
                     <i className={kelas.star1}></i>
@@ -85,6 +91,8 @@ const HomePage = () => {
               <button
                 className="btn btn-success rounded-5 btn-lg"
                 onClick={() => navigate("/kelas")}
+                data-aos="fade-up"
+                data-aos-duaration="1000"
               >
                 Lihat Semua kelas
                 <i className="fa-solid fa-chevron-right ms-1"></i>
